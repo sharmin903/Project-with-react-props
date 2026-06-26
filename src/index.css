@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.parents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  width: clamp(280px, 90%, 400px);
+  height: auto;
+  border-radius: 10px;
+  padding: 40px;
+
+}
+
+.first {
+  flex-wrap: wrap;
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.first img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid rgb(199, 199, 199);
+  object-fit: cover;
+  object-position: center;
+}
+
+.first button {
+  padding: 4px 15px;
+  border-radius: 3px;
+  border: 1px solid rgb(163, 163, 163);
+  color: gray;
+  cursor: pointer;
+
+}
+.first button:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.first button.saved {
+  background-color: #3a3a3a;
+  color: white;
+  border-color: #2c2c2c;
+}
+
+.mid {
+  color: black;
+
+}
+
+.mid span {
+  color: gray;
+  font-size: 15px;
+  margin-left: 8px;
+}
+
+.mid .btn-lik {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+
+}
+
+.mid .btn-lik h4 {
+  padding: 8px 10px;
+  background-color: rgb(208, 208, 208);
+  color: rgb(73, 73, 73);
+  border-radius: 3px;
+}
+
+.end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+  border-top: 1px solid gray;
+}
+
+.end h3 {
+  color: black;
+
+}
+
+.end h4 {
+  color: gray;
+}
+
+button.apply {
+  padding: 10px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  white-space: nowrap;
+}
+button.apply:hover {
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
